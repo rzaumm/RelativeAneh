@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="palembang, 28 Sept. 2022"
         android:layout_alignParentRight="true"/>
+
     <TextView
         android:id="@+id/tv_Formulir_Pernyataan"
         android:layout_width="wrap_content"
@@ -27,13 +28,45 @@
         android:hint="Nama"
         android:layout_below="@+id/tv_Formulir_Pernyataan"/>
 
-        <Button
-            android:id="@+id/btn_enter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ENTER"
-            android:layout_below="@+id/et_nama"
-            android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER"
+        android:layout_below="@+id/et_nama"
+        android:background="@color/purple_200"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/cb_ya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ya"
+        android:layout_alignParentBottom="true"/>
+
+    <CheckBox
+        android:id="@+id/cb_tidak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidak"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/cb_ya"/>
+
+    <TextView
+        android:id="@+id/tv_saya_nyatakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saya menyatakan data ini :"
+        android:layout_above="@+id/cb_ya"/>
+
+    <Spinner
+        android:id="@+id/sp_kemungkinan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/arr_kemungkinan"
+        android:layout_above="@+id/cb_ya"
+        android:layout_toRightOf="@+id/tv_saya_nyatakan"/>
+
 
 
 
